@@ -1,5 +1,6 @@
 package com.sbaldasso.tmdbapp.domain.repository
 
+import androidx.paging.PagingData
 import com.sbaldasso.tmdbapp.domain.model.Movie
 import kotlinx.coroutines.flow.Flow
 
@@ -8,4 +9,5 @@ interface MovieRepository {
     suspend fun getMovieDetails(movieId: Int): Result<Movie>
     suspend fun searchMovies(query: String, page: Int): Result<List<Movie>>
     fun getPopularMoviesFlow(): Flow<List<Movie>>
+    fun getPopularMoviesPaging(): Flow<PagingData<Movie>>
 }
