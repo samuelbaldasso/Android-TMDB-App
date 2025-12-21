@@ -8,7 +8,7 @@
 
 Um aplicativo Android moderno que consome a API do **The Movie Database (TMDB)** para exibir informações de filmes populares, utilizando as melhores práticas de desenvolvimento Android.
 
-[Features](#-features) • [Screenshots](#-screenshots) • [Arquitetura](#-arquitetura) • [Tech Stack](#-tech-stack) • [Como Rodar](#-como-rodar) • [Testes](#-testes)
+[Features](#-features) • [Arquitetura](#-arquitetura) • [Tech Stack](#-tech-stack) • [Como Rodar](#-como-rodar) • [Testes](#-testes)
 
 </div>
 
@@ -17,7 +17,6 @@ Um aplicativo Android moderno que consome a API do **The Movie Database (TMDB)**
 ## 📋 Índice
 
 - [Features](#-features)
-- [Screenshots](#-screenshots)
 - [Arquitetura](#-arquitetura)
 - [Tech Stack](#-tech-stack)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
@@ -65,24 +64,6 @@ Um aplicativo Android moderno que consome a API do **The Movie Database (TMDB)**
 - ✅ Loading states em todos os fluxos
 - ✅ Retry em caso de falha
 - ✅ Arquitetura escalável e testável
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-| Home Screen | Details Screen | Search Screen |
-|------------|----------------|---------------|
-| <img src="screenshots/home.png" width="250"/> | <img src="screenshots/details.png" width="250"/> | <img src="screenshots/search.png" width="250"/> |
-
-| Loading State | Error State | Empty State |
-|--------------|-------------|-------------|
-| <img src="screenshots/loading.png" width="250"/> | <img src="screenshots/error.png" width="250"/> | <img src="screenshots/empty.png" width="250"/> |
-
-</div>
-
-> 📝 **Nota**: Adicione as screenshots na pasta `screenshots/` na raiz do projeto.
 
 ---
 
@@ -234,8 +215,9 @@ com.sbaldasso.tmdbapp/
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/tmdb-app.git
-cd tmdb-app
+git clone https://github.com/samuelbaldasso/Android-TMDB-App.git
+
+cd Android-TMDB-App
 ```
 
 2. **Configure a API Key**
