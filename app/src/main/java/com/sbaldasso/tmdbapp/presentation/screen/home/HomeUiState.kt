@@ -8,5 +8,6 @@ data class HomeUiState(
     val error: String? = null,
     val isLoadingMore: Boolean = false,
     val currentPage: Int = 1,
+    val loadMoreError: String? = null,
     val canLoadMore: Boolean = true
 )

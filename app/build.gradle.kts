@@ -31,7 +31,8 @@ android {
         if (localPropertiesFile.exists()) {
             properties.load(localPropertiesFile.inputStream())
         }
-        val tmdbApiKey = properties.getProperty("TMDB_API_KEY") ?: ""
+
+        val tmdbApiKey = properties.getProperty("TMDB_API_KEY") ?: "bea61ff5054f9ae165b6a33635b0e9c2"
         buildConfigField("String", "TMDB_API_KEY", "\"$tmdbApiKey\"")
     }
 

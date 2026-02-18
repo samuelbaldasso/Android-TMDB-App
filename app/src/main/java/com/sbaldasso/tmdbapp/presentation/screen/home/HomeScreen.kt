@@ -87,6 +87,14 @@ fun HomeScreen(
                             )
                         }
 
+                        if(uiState.loadMoreError !== null){
+                            item {
+                                ErrorView(
+                                    message = uiState.loadMoreError ?: "Erro desconhecido",
+                                    onRetry = { viewModel.loadMoreMovies() },
+                                )
+                            }
+                        }
                         // Loading indicator no final da lista
                         if (uiState.isLoadingMore) {
                             item(span = { androidx.compose.foundation.lazy.grid.GridItemSpan(2) }) {

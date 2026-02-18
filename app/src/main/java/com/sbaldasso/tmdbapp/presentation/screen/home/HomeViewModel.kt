@@ -27,7 +27,7 @@ class HomeViewModel @Inject constructor(
         if (_uiState.value.isLoading) return
 
         viewModelScope.launch {
-            _uiState.update { it.copy(isLoading = true, error = null) }
+            _uiState.update { it.copy(isLoading = true, error = null, loadMoreError = null) }
 
             getPopularMoviesUseCase(
                 1
@@ -74,7 +74,8 @@ class HomeViewModel @Inject constructor(
                 }
                 .onFailure {
                     _uiState.update {
-                        it.copy(isLoadingMore = false)
+                        it.copy(isLoadingMore = false,
+                                loadMoreError = "Erro ao carregar filmes. Tente novamente.")
                     }
                 }
         }
