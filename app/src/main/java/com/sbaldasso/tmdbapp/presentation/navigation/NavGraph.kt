@@ -9,16 +9,27 @@ import androidx.navigation.navArgument
 import com.sbaldasso.tmdbapp.presentation.screen.details.DetailsScreen
 import com.sbaldasso.tmdbapp.presentation.screen.home.HomeScreen
 import com.sbaldasso.tmdbapp.presentation.screen.search.SearchScreen
+import com.sbaldasso.tmdbapp.presentation.screen.splash.SplashScreen
 
 @Composable
 fun NavGraph(
     navController: NavHostController,
-    startDestination: String = Screen.Home.route
+    startDestination: String = Screen.Splash.route
 ) {
     NavHost(
         navController = navController,
         startDestination = startDestination
     ) {
+        composable(Screen.Splash.route) {
+            SplashScreen(
+                onNavigateToHome = {
+                    navController.navigate(Screen.Home.route) {
+                        popUpTo(Screen.Splash.route) { inclusive = true }
+                    }
+                }
+            )
+        }
+
         composable(Screen.Home.route) {
             HomeScreen(
                 onMovieClick = { movieId ->
