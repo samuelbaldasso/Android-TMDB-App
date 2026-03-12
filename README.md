@@ -597,7 +597,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ```
 MIT License
 
-Copyright (c) 2024 Seu Nome
+Copyright (c) 2026 - Samuel Baldasso
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
