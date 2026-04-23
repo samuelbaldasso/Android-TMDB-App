@@ -16,6 +16,7 @@ A modern Android application that consumes the **The Movie Database (TMDB)** API
 
 ## 📋 Table of Contents
 
+- [Screenshots](#-screenshots)
 - [Features](#-features)
 - [Architecture](#-architecture)
 - [Tech Stack](#-tech-stack)
@@ -27,6 +28,37 @@ A modern Android application that consumes the **The Movie Database (TMDB)** API
 - [Future Improvements](#-future-improvements)
 - [Contributing](#-contributing)
 - [License](#-license)
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center"><b>Splash Screen</b></td>
+    <td align="center"><b>Buscar Filmes</b></td>
+    <td align="center"><b>Resultados de Busca</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/splash.png" width="200"/></td>
+    <td><img src="screenshots/search_empty.png" width="200"/></td>
+    <td><img src="screenshots/search_results.png" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Detalhes do Filme</b></td>
+    <td align="center"><b>Filmes Populares</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/details.png" width="200"/></td>
+    <td><img src="screenshots/home.png" width="200"/></td>
+    <td></td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
