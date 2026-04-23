@@ -12,9 +12,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
+import com.sbaldasso.tmdbapp.R
 import com.sbaldasso.tmdbapp.presentation.component.ErrorView
 import com.sbaldasso.tmdbapp.presentation.component.LoadingIndicator
 import com.sbaldasso.tmdbapp.presentation.component.RatingBadge
@@ -70,6 +72,9 @@ fun DetailsScreen(
                         AsyncImage(
                             model = movie.getBackdropUrl(),
                             contentDescription = movie.title,
+                            placeholder = painterResource(R.drawable.ic_image_placeholder),
+                            error = painterResource(R.drawable.ic_image_placeholder),
+                            fallback = painterResource(R.drawable.ic_image_placeholder),
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .height(220.dp),
@@ -121,7 +126,8 @@ fun DetailsScreen(
                             Spacer(modifier = Modifier.height(8.dp))
 
                             Text(
-                                text = movie.overview,
+                                text = movie.overview.takeIf { it.isNotBlank() }
+                                    ?: "Sinopse não disponível.",
                                 style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )

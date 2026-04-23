@@ -50,7 +50,7 @@ fun MovieCard(
                 Text(
                     text = movie.title,
                     style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.onSurface,
+                    color = MaterialTheme.colorScheme.background,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
                 )
