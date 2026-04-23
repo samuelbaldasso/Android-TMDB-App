@@ -38,8 +38,8 @@ A modern Android application that consumes the **The Movie Database (TMDB)** API
 <table>
   <tr>
     <td align="center"><b>Splash Screen</b></td>
-    <td align="center"><b>Buscar Filmes</b></td>
-    <td align="center"><b>Resultados de Busca</b></td>
+    <td align="center"><b>Search Movies</b></td>
+    <td align="center"><b>Search Results</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/splash.png" width="200"/></td>
@@ -47,14 +47,13 @@ A modern Android application that consumes the **The Movie Database (TMDB)** API
     <td><img src="screenshots/search_results.png" width="200"/></td>
   </tr>
   <tr>
-    <td align="center"><b>Detalhes do Filme</b></td>
-    <td align="center"><b>Filmes Populares</b></td>
+    <td align="center"><b>Movie Details</b></td>
+    <td align="center"><b>Popular Movies</b></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="screenshots/details.png" width="200"/></td>
     <td><img src="screenshots/home.png" width="200"/></td>
-    <td></td>
   </tr>
 </table>
 
